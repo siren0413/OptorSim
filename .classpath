@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" output="classes" path="src"/>
+	<classpathentry kind="var" path="JRE_LIB" rootpath="JRE_SRCROOT" sourcepath="JRE_SRC"/>
+	<classpathentry kind="lib" path="/Users/siren0413/Desktop/w/optorsim/lib/optorsim.jar"/>
+	<classpathentry kind="lib" path="/Users/siren0413/Desktop/w/optorsim/external-lib/jcommon-0.9.5.jar"/>
+	<classpathentry kind="lib" path="/Users/siren0413/Desktop/w/optorsim/external-lib/jfreechart-0.9.20.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
