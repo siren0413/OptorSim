@@ -173,22 +173,19 @@ public class SkelOptor implements Optimisable {
 		return aggregatedCost;
 	}
 
+	/**
+	 * get bandwidth.
+	 */
 	@Override
 	public double getBandwidthBenchmark(String[] lfns, ComputingElement ce, float[] fileFraction) {
 		double totalTimeCost = 0;
 		final float MAX_BANDWIDTH_UNIT = 1000;
 		int i, j;
-		BandwidthReader bwReader = BandwidthReader.getInstance();
 		GridContainer gridContainer = GridContainer.getInstance();
 
-		DataFile[] files = getBestFile(lfns, fileFraction);
+		DataFile[] files = getBestFileForBandwidth(lfns, ce.getSite(), fileFraction);
 		for (i = 0; i < files.length; i++) {
 			GridSite remoteSite = files[i].se().getGridSite();
-			BandwidthData bwDate = bwReader.getBandwidth(ce.getSite(), remoteSite, 0);
-			if (bwDate == null) {
-				System.out.println("optor> no bandwidth data found for original site:" + ce.getSite() + " to remote site:" + remoteSite);
-				continue;
-			}
 
 			float fileSize = files[i].size();
 			if (ce.getSite() == remoteSite) {
@@ -198,7 +195,7 @@ public class SkelOptor implements Optimisable {
 			float maxBandwidth = gridContainer.maxBandwidth(ce.getSite(), remoteSite);
 			if (maxBandwidth > MAX_BANDWIDTH_UNIT)
 				maxBandwidth = MAX_BANDWIDTH_UNIT;
-			totalTimeCost += fileSize / (bwDate.getMean() * maxBandwidth);
+			totalTimeCost += fileSize / maxBandwidth;
 		}
 
 		return totalTimeCost;
@@ -211,5 +208,69 @@ public class SkelOptor implements Optimisable {
 	public void cancelFilePrefetch(String[] lfn, ComputingElement CE) {
 		System.out.println("cancelFilePrefetch");
 	}
+	
+	public DataFile[] getBestFileForBandwidth(String[] lfns, GridSite ceSite, float[] fileFraction) {
+		DataFile files[] = new DataFile[lfns.length];
+		DataFile replicas[];
+		int i, j;
+		NetworkCost minNC = null;
+		ReplicaManager rm = ReplicaManager.getInstance();
 
+		// For each requested LFN
+		for (i = 0; i < lfns.length; i++) {
+
+			do {
+				replicas = rm.listReplicas(lfns[i]);
+				// Find the cheapest file:
+				for (j = 0; j < replicas.length; j++) {
+					replicas[j].addPin(); // pin the file
+					StorageElement remoteSE = replicas[j].se();
+
+					// If file has been deleted since listReplicas
+					if (remoteSE == null) {
+						continue;
+					}
+
+					GridSite remoteSite = remoteSE.getGridSite();
+
+					// If this is the same site, always use it.
+					if (remoteSite == _site) {
+						if (files[i] != null)
+							files[i].releasePin(); // unpin previously selected
+													// file
+						files[i] = replicas[j];
+						break;
+					}
+
+					int transferSize = (int) (replicas[j].size() * fileFraction[i]);
+					NetworkCost nc = _networkClient.getNetworkCosts(remoteSite, ceSite, transferSize);
+
+					if ((j == 0) || (nc.getCost() <= minNC.getCost())) {
+
+						if ((j != 0) && (nc.getCost() == minNC.getCost())) {
+							Random random = new Random();
+							if (random.nextFloat() < 0.5) {
+								minNC = nc;
+								if (files[i] != null)
+									files[i].releasePin();
+
+								files[i] = replicas[j];
+							}
+						} else {
+							minNC = nc;
+
+							if (files[i] != null)
+								files[i].releasePin(); // unpin previously
+														// selected file
+
+							files[i] = replicas[j];
+						}
+					} else { // replicas[j] not a good candidate,
+						replicas[j].releasePin(); // unpin it
+					}
+				}
+			} while (files[i] == null);
+		}
+		return files;
+	}
 }

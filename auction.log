@@ -1,2 +1,910 @@
- *** Auction log began Wed Nov 20 21:55:31 CST 2013 ***
+ *** Auction log began Thu Nov 21 20:56:19 CST 2013 ***
 
+1385013600761 AuctionThread0> kicking into life processing Auction0 ...
+1385013600761 Auction0> starting level 0 auction for file File10 for AM@Site2
+1385013600761 sb0@Site2> enough space, so replicate anyway
+1385013600761 sb0@Site2> Starting Auction1 (level 1) for File10 reacting to Auction0
+1385013600761 AuctionThread1> kicking into life processing Auction1 ...
+1385013600761 Auction1> starting level 1 auction for file File10 for sb0@Site2
+1385013600761 sb0@Site0> local file satisfies Auction0, bidding 0.8888889
+1385013600761 Auction0> adding bid of 0.8888889 from sb0@Site0
+1385013600791 AuctionThread2> kicking into life processing Auction2 ...
+1385013600791 Auction2> starting level 0 auction for file File9 for AM@Site1
+1385013600791 sb0@Site1> enough space, so replicate anyway
+1385013600791 sb0@Site1> Starting Auction3 (level 1) for File9 reacting to Auction2
+1385013600791 sb0@Site0> local file satisfies Auction2, bidding 0.8
+1385013600791 Auction2> adding bid of 0.8 from sb0@Site0
+1385013600791 AuctionThread3> kicking into life processing Auction3 ...
+1385013600791 Auction3> starting level 1 auction for file File9 for sb0@Site1
+1385013600911 sb0@Site0> local file satisfies Auction1, bidding 0.8888889
+1385013600911 Auction1> adding bid of 0.8888889 from sb0@Site0
+1385013600941 sb0@Site0> local file satisfies Auction3, bidding 0.8
+1385013600941 Auction3> adding bid of 0.8 from sb0@Site0
+1385013601111 Auction1> sb0@Site0 wins at price 3.4028235E38
+1385013601111 sb0@Site2> hello? why am I not bidding?
+1385013601111 sb0@Site0> I won auction Auction1, file is local so sending RFD message
+1385013601111 sb0@Site2> Nested auction Auction1 complete, sending bid of 0.0 to auction Auction0
+1385013601111 Auction0> adding bid of 0.0 from sb0@Site2
+1385013601111 Auction1> received rfd message
+1385013601111 Auction1> starting to replicate, winning file is {File10 on SE1@Site0}
+1385013601141 Auction3> sb0@Site0 wins at price 3.4028235E38
+1385013601141 sb0@Site1> hello? why am I not bidding?
+1385013601141 sb0@Site1> Nested auction Auction3 complete, sending bid of 0.0 to auction Auction2
+1385013601141 Auction2> adding bid of 0.0 from sb0@Site1
+1385013601141 sb0@Site0> I won auction Auction3, file is local so sending RFD message
+1385013601141 Auction3> received rfd message
+1385013601141 Auction3> starting to replicate, winning file is {File9 on SE1@Site0}
+1385013601261 Auction0> sb0@Site2 wins at price 0.8888889
+1385013601261 sb0@Site2> won Auction0, but still replicating, updating pending file
+1385013601291 Auction2> sb0@Site1 wins at price 0.8
+1385013601291 sb0@Site1> won Auction2, but still replicating, updating pending file
+1385013601941 sb0@Site1> Replica ready, sending RFD to Auction2
+1385013601941 Auction2> received rfd message
+1385013601999 sb0@Site2> Replica ready, sending RFD to Auction0
+1385013601999 Auction0> received rfd message
+1385013602941 Auction4> starting level 0 auction for file File9 for AM@Site1
+1385013602941 sb0@Site1> local file satisfies Auction4, bidding 0.0
+1385013602941 Auction4> adding bid of 0.0 from sb0@Site1
+1385013602941 sb0@Site0> local file satisfies Auction4, bidding 0.8
+1385013602941 Auction4> adding bid of 0.8 from sb0@Site0
+1385013602999 Auction5> starting level 0 auction for file File10 for AM@Site2
+1385013602999 sb0@Site2> local file satisfies Auction5, bidding 0.0
+1385013602999 Auction5> adding bid of 0.0 from sb0@Site2
+1385013602999 sb0@Site0> local file satisfies Auction5, bidding 0.8888889
+1385013602999 Auction5> adding bid of 0.8888889 from sb0@Site0
+1385013603441 Auction4> sb0@Site1 wins at price 0.8
+1385013603441 sb0@Site1> I won auction Auction4, file is local so sending RFD message
+1385013603441 Auction4> received rfd message
+1385013603499 Auction5> sb0@Site2 wins at price 0.8888889
+1385013603499 sb0@Site2> I won auction Auction5, file is local so sending RFD message
+1385013603499 Auction5> received rfd message
+1385013604441 Auction6> starting level 0 auction for file File8 for AM@Site1
+1385013604441 sb0@Site1> enough space, so replicate anyway
+1385013604441 sb0@Site1> Starting Auction7 (level 1) for File8 reacting to Auction6
+1385013604441 sb0@Site0> local file satisfies Auction6, bidding 0.8
+1385013604441 Auction6> adding bid of 0.8 from sb0@Site0
+1385013604441 Auction7> starting level 1 auction for file File8 for sb0@Site1
+1385013604499 Auction8> starting level 0 auction for file File10 for AM@Site2
+1385013604499 sb0@Site2> local file satisfies Auction8, bidding 0.0
+1385013604499 Auction8> adding bid of 0.0 from sb0@Site2
+1385013604499 sb0@Site0> local file satisfies Auction8, bidding 0.8888889
+1385013604499 Auction8> adding bid of 0.8888889 from sb0@Site0
+1385013604591 sb0@Site0> local file satisfies Auction7, bidding 0.8
+1385013604591 Auction7> adding bid of 0.8 from sb0@Site0
+1385013604791 Auction7> sb0@Site0 wins at price 3.4028235E38
+1385013604791 sb0@Site1> hello? why am I not bidding?
+1385013604791 sb0@Site1> Nested auction Auction7 complete, sending bid of 0.0 to auction Auction6
+1385013604791 sb0@Site0> I won auction Auction7, file is local so sending RFD message
+1385013604791 Auction6> adding bid of 0.0 from sb0@Site1
+1385013604791 Auction7> received rfd message
+1385013604791 Auction7> starting to replicate, winning file is {File8 on SE1@Site0}
+1385013604941 Auction6> sb0@Site1 wins at price 0.8
+1385013604941 sb0@Site1> won Auction6, but still replicating, updating pending file
+1385013604999 Auction8> sb0@Site2 wins at price 0.8888889
+1385013604999 sb0@Site2> I won auction Auction8, file is local so sending RFD message
+1385013604999 Auction8> received rfd message
+1385013605591 sb0@Site1> Replica ready, sending RFD to Auction6
+1385013605591 Auction6> received rfd message
+1385013605999 Auction9> starting level 0 auction for file File10 for AM@Site2
+1385013605999 sb0@Site2> local file satisfies Auction9, bidding 0.0
+1385013605999 Auction9> adding bid of 0.0 from sb0@Site2
+1385013605999 sb0@Site0> local file satisfies Auction9, bidding 0.8888889
+1385013605999 Auction9> adding bid of 0.8888889 from sb0@Site0
+1385013606499 Auction9> sb0@Site2 wins at price 0.8888889
+1385013606499 sb0@Site2> I won auction Auction9, file is local so sending RFD message
+1385013606499 Auction9> received rfd message
+1385013606591 Auction10> starting level 0 auction for file File4 for AM@Site1
+1385013606591 sb0@Site1> enough space, so replicate anyway
+1385013606591 sb0@Site1> Starting Auction11 (level 1) for File4 reacting to Auction10
+1385013606591 sb0@Site0> local file satisfies Auction10, bidding 0.8
+1385013606591 Auction10> adding bid of 0.8 from sb0@Site0
+1385013606591 Auction11> starting level 1 auction for file File4 for sb0@Site1
+1385013606741 sb0@Site0> local file satisfies Auction11, bidding 0.8
+1385013606741 Auction11> adding bid of 0.8 from sb0@Site0
+1385013606941 Auction11> sb0@Site0 wins at price 3.4028235E38
+1385013606941 sb0@Site1> hello? why am I not bidding?
+1385013606941 sb0@Site1> Nested auction Auction11 complete, sending bid of 0.0 to auction Auction10
+1385013606941 Auction10> adding bid of 0.0 from sb0@Site1
+1385013606941 sb0@Site0> I won auction Auction11, file is local so sending RFD message
+1385013606941 Auction11> received rfd message
+1385013606941 Auction11> starting to replicate, winning file is {File4 on SE1@Site0}
+1385013607091 Auction10> sb0@Site1 wins at price 0.8
+1385013607091 sb0@Site1> won Auction10, but still replicating, updating pending file
+1385013607741 sb0@Site1> Replica ready, sending RFD to Auction10
+1385013607741 Auction10> received rfd message
+1385013608741 Auction12> starting level 0 auction for file File2 for AM@Site1
+1385013608741 sb0@Site1> enough space, so replicate anyway
+1385013608741 sb0@Site1> Starting Auction13 (level 1) for File2 reacting to Auction12
+1385013608741 sb0@Site0> local file satisfies Auction12, bidding 0.8
+1385013608741 Auction13> starting level 1 auction for file File2 for sb0@Site1
+1385013608741 Auction12> adding bid of 0.8 from sb0@Site0
+1385013608891 sb0@Site0> local file satisfies Auction13, bidding 0.8
+1385013608891 Auction13> adding bid of 0.8 from sb0@Site0
+1385013609091 Auction13> sb0@Site0 wins at price 3.4028235E38
+1385013609091 sb0@Site1> hello? why am I not bidding?
+1385013609091 sb0@Site1> Nested auction Auction13 complete, sending bid of 0.0 to auction Auction12
+1385013609091 sb0@Site0> I won auction Auction13, file is local so sending RFD message
+1385013609091 Auction12> adding bid of 0.0 from sb0@Site1
+1385013609091 Auction13> received rfd message
+1385013609091 Auction13> starting to replicate, winning file is {File2 on SE1@Site0}
+1385013609241 Auction12> sb0@Site1 wins at price 0.8
+1385013609241 sb0@Site1> won Auction12, but still replicating, updating pending file
+1385013609891 sb0@Site1> Replica ready, sending RFD to Auction12
+1385013609891 Auction12> received rfd message
+1385013610891 Auction14> starting level 0 auction for file File6 for AM@Site1
+1385013610891 sb0@Site1> enough space, so replicate anyway
+1385013610891 sb0@Site1> Starting Auction15 (level 1) for File6 reacting to Auction14
+1385013610891 sb0@Site0> local file satisfies Auction14, bidding 0.8
+1385013610891 Auction14> adding bid of 0.8 from sb0@Site0
+1385013610891 Auction15> starting level 1 auction for file File6 for sb0@Site1
+1385013611041 sb0@Site0> local file satisfies Auction15, bidding 0.8
+1385013611041 Auction15> adding bid of 0.8 from sb0@Site0
+1385013611241 Auction15> sb0@Site0 wins at price 3.4028235E38
+1385013611241 sb0@Site1> hello? why am I not bidding?
+1385013611241 sb0@Site1> Nested auction Auction15 complete, sending bid of 0.0 to auction Auction14
+1385013611241 sb0@Site0> I won auction Auction15, file is local so sending RFD message
+1385013611241 Auction14> adding bid of 0.0 from sb0@Site1
+1385013611241 Auction15> received rfd message
+1385013611241 Auction15> starting to replicate, winning file is {File6 on SE1@Site0}
+1385013611391 Auction14> sb0@Site1 wins at price 0.8
+1385013611391 sb0@Site1> won Auction14, but still replicating, updating pending file
+1385013612041 sb0@Site1> Replica ready, sending RFD to Auction14
+1385013612041 Auction14> received rfd message
+1385013613041 Auction16> starting level 0 auction for file File7 for AM@Site1
+1385013613041 sb0@Site1> enough space, so replicate anyway
+1385013613041 sb0@Site1> Starting Auction17 (level 1) for File7 reacting to Auction16
+1385013613041 sb0@Site0> local file satisfies Auction16, bidding 0.8
+1385013613041 Auction16> adding bid of 0.8 from sb0@Site0
+1385013613041 Auction17> starting level 1 auction for file File7 for sb0@Site1
+1385013613191 sb0@Site0> local file satisfies Auction17, bidding 0.8
+1385013613191 Auction17> adding bid of 0.8 from sb0@Site0
+1385013613391 Auction17> sb0@Site0 wins at price 3.4028235E38
+1385013613391 sb0@Site1> hello? why am I not bidding?
+1385013613391 sb0@Site1> Nested auction Auction17 complete, sending bid of 0.0 to auction Auction16
+1385013613391 sb0@Site0> I won auction Auction17, file is local so sending RFD message
+1385013613391 Auction16> adding bid of 0.0 from sb0@Site1
+1385013613391 Auction17> received rfd message
+1385013613391 Auction17> starting to replicate, winning file is {File7 on SE1@Site0}
+1385013613541 Auction16> sb0@Site1 wins at price 0.8
+1385013613541 sb0@Site1> won Auction16, but still replicating, updating pending file
+1385013614191 sb0@Site1> Replica ready, sending RFD to Auction16
+1385013614191 Auction16> received rfd message
+1385013615191 Auction18> starting level 0 auction for file File8 for AM@Site1
+1385013615191 sb0@Site1> local file satisfies Auction18, bidding 0.0
+1385013615191 Auction18> adding bid of 0.0 from sb0@Site1
+1385013615191 sb0@Site0> local file satisfies Auction18, bidding 0.8
+1385013615191 Auction18> adding bid of 0.8 from sb0@Site0
+1385013615691 Auction18> sb0@Site1 wins at price 0.8
+1385013615691 sb0@Site1> I won auction Auction18, file is local so sending RFD message
+1385013615691 Auction18> received rfd message
+1385013616691 Auction19> starting level 0 auction for file File9 for AM@Site1
+1385013616691 sb0@Site1> local file satisfies Auction19, bidding 0.0
+1385013616691 Auction19> adding bid of 0.0 from sb0@Site1
+1385013616691 sb0@Site0> local file satisfies Auction19, bidding 0.8
+1385013616691 Auction19> adding bid of 0.8 from sb0@Site0
+1385013617191 Auction19> sb0@Site1 wins at price 0.8
+1385013617191 sb0@Site1> I won auction Auction19, file is local so sending RFD message
+1385013617191 Auction19> received rfd message
+1385013618191 Auction20> starting level 0 auction for file File9 for AM@Site1
+1385013618191 sb0@Site1> local file satisfies Auction20, bidding 0.0
+1385013618191 Auction20> adding bid of 0.0 from sb0@Site1
+1385013618191 sb0@Site0> local file satisfies Auction20, bidding 0.8
+1385013618191 Auction20> adding bid of 0.8 from sb0@Site0
+1385013618691 Auction20> sb0@Site1 wins at price 0.8
+1385013618691 sb0@Site1> I won auction Auction20, file is local so sending RFD message
+1385013618691 Auction20> received rfd message
+1385013619691 Auction21> starting level 0 auction for file File9 for AM@Site1
+1385013619691 sb0@Site1> local file satisfies Auction21, bidding 0.0
+1385013619691 Auction21> adding bid of 0.0 from sb0@Site1
+1385013619691 sb0@Site0> local file satisfies Auction21, bidding 0.8
+1385013619691 Auction21> adding bid of 0.8 from sb0@Site0
+1385013620191 Auction21> sb0@Site1 wins at price 0.8
+1385013620191 sb0@Site1> I won auction Auction21, file is local so sending RFD message
+1385013620191 Auction21> received rfd message
+1385013621191 Auction22> starting level 0 auction for file File8 for AM@Site1
+1385013621191 sb0@Site1> local file satisfies Auction22, bidding 0.0
+1385013621191 Auction22> adding bid of 0.0 from sb0@Site1
+1385013621191 sb0@Site0> local file satisfies Auction22, bidding 0.8
+1385013621191 Auction22> adding bid of 0.8 from sb0@Site0
+1385013621691 Auction22> sb0@Site1 wins at price 0.8
+1385013621691 sb0@Site1> I won auction Auction22, file is local so sending RFD message
+1385013621691 Auction22> received rfd message
+1385013622691 Auction23> starting level 0 auction for file File4 for AM@Site1
+1385013622691 sb0@Site1> local file satisfies Auction23, bidding 0.0
+1385013622691 Auction23> adding bid of 0.0 from sb0@Site1
+1385013622691 sb0@Site0> local file satisfies Auction23, bidding 0.8
+1385013622691 Auction23> adding bid of 0.8 from sb0@Site0
+1385013623191 Auction23> sb0@Site1 wins at price 0.8
+1385013623191 sb0@Site1> I won auction Auction23, file is local so sending RFD message
+1385013623191 Auction23> received rfd message
+1385013624191 Auction24> starting level 0 auction for file File5 for AM@Site1
+1385013624191 sb0@Site1> enough space, so replicate anyway
+1385013624191 sb0@Site1> Starting Auction25 (level 1) for File5 reacting to Auction24
+1385013624191 sb0@Site0> local file satisfies Auction24, bidding 0.8
+1385013624191 Auction24> adding bid of 0.8 from sb0@Site0
+1385013624191 Auction25> starting level 1 auction for file File5 for sb0@Site1
+1385013624341 sb0@Site0> local file satisfies Auction25, bidding 0.8
+1385013624341 Auction25> adding bid of 0.8 from sb0@Site0
+1385013624541 Auction25> sb0@Site0 wins at price 3.4028235E38
+1385013624541 sb0@Site1> hello? why am I not bidding?
+1385013624541 sb0@Site1> Nested auction Auction25 complete, sending bid of 0.0 to auction Auction24
+1385013624541 sb0@Site0> I won auction Auction25, file is local so sending RFD message
+1385013624541 Auction24> adding bid of 0.0 from sb0@Site1
+1385013624541 Auction25> received rfd message
+1385013624541 Auction25> starting to replicate, winning file is {File5 on SE1@Site0}
+1385013624691 Auction24> sb0@Site1 wins at price 0.8
+1385013624691 sb0@Site1> won Auction24, but still replicating, updating pending file
+1385013625341 sb0@Site1> Replica ready, sending RFD to Auction24
+1385013625341 Auction24> received rfd message
+1385013626341 Auction26> starting level 0 auction for file File6 for AM@Site1
+1385013626341 sb0@Site1> local file satisfies Auction26, bidding 0.0
+1385013626341 Auction26> adding bid of 0.0 from sb0@Site1
+1385013626341 sb0@Site0> local file satisfies Auction26, bidding 0.8
+1385013626341 Auction26> adding bid of 0.8 from sb0@Site0
+1385013626841 Auction26> sb0@Site1 wins at price 0.8
+1385013626841 sb0@Site1> I won auction Auction26, file is local so sending RFD message
+1385013626841 Auction26> received rfd message
+1385013627841 Auction27> starting level 0 auction for file File7 for AM@Site1
+1385013627841 sb0@Site1> local file satisfies Auction27, bidding 0.0
+1385013627841 Auction27> adding bid of 0.0 from sb0@Site1
+1385013627841 sb0@Site0> local file satisfies Auction27, bidding 0.8
+1385013627841 Auction27> adding bid of 0.8 from sb0@Site0
+1385013628341 Auction27> sb0@Site1 wins at price 0.8
+1385013628341 sb0@Site1> I won auction Auction27, file is local so sending RFD message
+1385013628341 Auction27> received rfd message
+1385013629341 Auction28> starting level 0 auction for file File8 for AM@Site1
+1385013629341 sb0@Site1> local file satisfies Auction28, bidding 0.0
+1385013629341 Auction28> adding bid of 0.0 from sb0@Site1
+1385013629341 sb0@Site0> local file satisfies Auction28, bidding 0.8
+1385013629341 Auction28> adding bid of 0.8 from sb0@Site0
+1385013629841 Auction28> sb0@Site1 wins at price 0.8
+1385013629841 sb0@Site1> I won auction Auction28, file is local so sending RFD message
+1385013629841 Auction28> received rfd message
+1385013630841 Auction29> starting level 0 auction for file File9 for AM@Site1
+1385013630841 sb0@Site1> local file satisfies Auction29, bidding 0.0
+1385013630841 Auction29> adding bid of 0.0 from sb0@Site1
+1385013630841 sb0@Site0> local file satisfies Auction29, bidding 0.8
+1385013630841 Auction29> adding bid of 0.8 from sb0@Site0
+1385013631341 Auction29> sb0@Site1 wins at price 0.8
+1385013631341 sb0@Site1> I won auction Auction29, file is local so sending RFD message
+1385013631341 Auction29> received rfd message
+1385013632341 Auction30> starting level 0 auction for file File9 for AM@Site1
+1385013632341 Auction30> adding bid of 0.0 from sb0@Site1
+1385013632341 sb0@Site1> local file satisfies Auction30, bidding 0.0
+1385013632341 sb0@Site0> local file satisfies Auction30, bidding 0.8
+1385013632341 Auction30> adding bid of 0.8 from sb0@Site0
+1385013632841 Auction30> sb0@Site1 wins at price 0.8
+1385013632841 sb0@Site1> I won auction Auction30, file is local so sending RFD message
+1385013632841 Auction30> received rfd message
+1385013633841 Auction31> starting level 0 auction for file File2 for AM@Site1
+1385013633841 sb0@Site1> local file satisfies Auction31, bidding 0.0
+1385013633841 Auction31> adding bid of 0.0 from sb0@Site1
+1385013633841 sb0@Site0> local file satisfies Auction31, bidding 0.8
+1385013633841 Auction31> adding bid of 0.8 from sb0@Site0
+1385013634341 Auction31> sb0@Site1 wins at price 0.8
+1385013634341 sb0@Site1> I won auction Auction31, file is local so sending RFD message
+1385013634341 Auction31> received rfd message
+1385013635341 Auction32> starting level 0 auction for file File8 for AM@Site1
+1385013635341 sb0@Site1> local file satisfies Auction32, bidding 0.0
+1385013635341 sb0@Site0> local file satisfies Auction32, bidding 0.8
+1385013635341 Auction32> adding bid of 0.0 from sb0@Site1
+1385013635341 Auction32> adding bid of 0.8 from sb0@Site0
+1385013635841 Auction32> sb0@Site1 wins at price 0.8
+1385013635841 sb0@Site1> I won auction Auction32, file is local so sending RFD message
+1385013635841 Auction32> received rfd message
+1385013636841 Auction33> starting level 0 auction for file File4 for AM@Site1
+1385013636841 sb0@Site1> local file satisfies Auction33, bidding 0.0
+1385013636841 Auction33> adding bid of 0.0 from sb0@Site1
+1385013636841 sb0@Site0> local file satisfies Auction33, bidding 0.8
+1385013636841 Auction33> adding bid of 0.8 from sb0@Site0
+1385013637341 Auction33> sb0@Site1 wins at price 0.8
+1385013637341 sb0@Site1> I won auction Auction33, file is local so sending RFD message
+1385013637341 Auction33> received rfd message
+1385013638341 Auction34> starting level 0 auction for file File5 for AM@Site1
+1385013638341 sb0@Site1> local file satisfies Auction34, bidding 0.0
+1385013638341 Auction34> adding bid of 0.0 from sb0@Site1
+1385013638341 sb0@Site0> local file satisfies Auction34, bidding 0.8
+1385013638341 Auction34> adding bid of 0.8 from sb0@Site0
+1385013638841 Auction34> sb0@Site1 wins at price 0.8
+1385013638841 sb0@Site1> I won auction Auction34, file is local so sending RFD message
+1385013638841 Auction34> received rfd message
+1385013639841 Auction35> starting level 0 auction for file File9 for AM@Site1
+1385013639841 sb0@Site1> local file satisfies Auction35, bidding 0.0
+1385013639841 Auction35> adding bid of 0.0 from sb0@Site1
+1385013639841 sb0@Site0> local file satisfies Auction35, bidding 0.8
+1385013639841 Auction35> adding bid of 0.8 from sb0@Site0
+1385013640341 Auction35> sb0@Site1 wins at price 0.8
+1385013640341 sb0@Site1> I won auction Auction35, file is local so sending RFD message
+1385013640341 Auction35> received rfd message
+1385013641341 Auction36> starting level 0 auction for file File7 for AM@Site1
+1385013641341 sb0@Site1> local file satisfies Auction36, bidding 0.0
+1385013641341 Auction36> adding bid of 0.0 from sb0@Site1
+1385013641341 sb0@Site0> local file satisfies Auction36, bidding 0.8
+1385013641341 Auction36> adding bid of 0.8 from sb0@Site0
+1385013641841 Auction36> sb0@Site1 wins at price 0.8
+1385013641841 sb0@Site1> I won auction Auction36, file is local so sending RFD message
+1385013641841 Auction36> received rfd message
+1385013642841 Auction37> starting level 0 auction for file File8 for AM@Site1
+1385013642841 sb0@Site1> local file satisfies Auction37, bidding 0.0
+1385013642841 Auction37> adding bid of 0.0 from sb0@Site1
+1385013642841 sb0@Site0> local file satisfies Auction37, bidding 0.8
+1385013642841 Auction37> adding bid of 0.8 from sb0@Site0
+1385013643341 Auction37> sb0@Site1 wins at price 0.8
+1385013643341 sb0@Site1> I won auction Auction37, file is local so sending RFD message
+1385013643341 Auction37> received rfd message
+1385013644341 Auction38> starting level 0 auction for file File9 for AM@Site1
+1385013644341 sb0@Site1> local file satisfies Auction38, bidding 0.0
+1385013644341 Auction38> adding bid of 0.0 from sb0@Site1
+1385013644341 sb0@Site0> local file satisfies Auction38, bidding 0.8
+1385013644341 Auction38> adding bid of 0.8 from sb0@Site0
+1385013644841 Auction38> sb0@Site1 wins at price 0.8
+1385013644841 sb0@Site1> I won auction Auction38, file is local so sending RFD message
+1385013644841 Auction38> received rfd message
+1385013645841 Auction39> starting level 0 auction for file File9 for AM@Site1
+1385013645841 sb0@Site1> local file satisfies Auction39, bidding 0.0
+1385013645841 Auction39> adding bid of 0.0 from sb0@Site1
+1385013645841 sb0@Site0> local file satisfies Auction39, bidding 0.8
+1385013645841 Auction39> adding bid of 0.8 from sb0@Site0
+1385013646341 Auction39> sb0@Site1 wins at price 0.8
+1385013646341 sb0@Site1> I won auction Auction39, file is local so sending RFD message
+1385013646341 Auction39> received rfd message
+1385013647341 Auction40> starting level 0 auction for file File9 for AM@Site1
+1385013647341 sb0@Site1> local file satisfies Auction40, bidding 0.0
+1385013647341 Auction40> adding bid of 0.0 from sb0@Site1
+1385013647341 sb0@Site0> local file satisfies Auction40, bidding 0.8
+1385013647341 Auction40> adding bid of 0.8 from sb0@Site0
+1385013647841 Auction40> sb0@Site1 wins at price 0.8
+1385013647841 sb0@Site1> I won auction Auction40, file is local so sending RFD message
+1385013647841 Auction40> received rfd message
+1385013648841 Auction41> starting level 0 auction for file File8 for AM@Site1
+1385013648841 sb0@Site1> local file satisfies Auction41, bidding 0.0
+1385013648841 Auction41> adding bid of 0.0 from sb0@Site1
+1385013648841 sb0@Site0> local file satisfies Auction41, bidding 0.8
+1385013648841 Auction41> adding bid of 0.8 from sb0@Site0
+1385013649341 Auction41> sb0@Site1 wins at price 0.8
+1385013649341 sb0@Site1> I won auction Auction41, file is local so sending RFD message
+1385013649341 Auction41> received rfd message
+1385013650341 Auction42> starting level 0 auction for file File4 for AM@Site1
+1385013650341 sb0@Site1> local file satisfies Auction42, bidding 0.0
+1385013650341 Auction42> adding bid of 0.0 from sb0@Site1
+1385013650341 sb0@Site0> local file satisfies Auction42, bidding 0.8
+1385013650341 Auction42> adding bid of 0.8 from sb0@Site0
+1385013650841 Auction42> sb0@Site1 wins at price 0.8
+1385013650841 sb0@Site1> I won auction Auction42, file is local so sending RFD message
+1385013650841 Auction42> received rfd message
+1385013651841 Auction43> starting level 0 auction for file File5 for AM@Site1
+1385013651841 sb0@Site1> local file satisfies Auction43, bidding 0.0
+1385013651841 Auction43> adding bid of 0.0 from sb0@Site1
+1385013651841 sb0@Site0> local file satisfies Auction43, bidding 0.8
+1385013651841 Auction43> adding bid of 0.8 from sb0@Site0
+1385013652341 Auction43> sb0@Site1 wins at price 0.8
+1385013652341 sb0@Site1> I won auction Auction43, file is local so sending RFD message
+1385013652341 Auction43> received rfd message
+1385013653341 Auction44> starting level 0 auction for file File6 for AM@Site1
+1385013653341 sb0@Site1> local file satisfies Auction44, bidding 0.0
+1385013653341 Auction44> adding bid of 0.0 from sb0@Site1
+1385013653341 sb0@Site0> local file satisfies Auction44, bidding 0.8
+1385013653341 Auction44> adding bid of 0.8 from sb0@Site0
+1385013653841 Auction44> sb0@Site1 wins at price 0.8
+1385013653841 sb0@Site1> I won auction Auction44, file is local so sending RFD message
+1385013653841 Auction44> received rfd message
+1385013654841 Auction45> starting level 0 auction for file File7 for AM@Site1
+1385013654841 sb0@Site1> local file satisfies Auction45, bidding 0.0
+1385013654841 Auction45> adding bid of 0.0 from sb0@Site1
+1385013654841 sb0@Site0> local file satisfies Auction45, bidding 0.8
+1385013654841 Auction45> adding bid of 0.8 from sb0@Site0
+1385013655341 Auction45> sb0@Site1 wins at price 0.8
+1385013655341 sb0@Site1> I won auction Auction45, file is local so sending RFD message
+1385013655341 Auction45> received rfd message
+1385013656341 Auction46> starting level 0 auction for file File8 for AM@Site1
+1385013656341 sb0@Site1> local file satisfies Auction46, bidding 0.0
+1385013656341 Auction46> adding bid of 0.0 from sb0@Site1
+1385013656341 sb0@Site0> local file satisfies Auction46, bidding 0.8
+1385013656341 Auction46> adding bid of 0.8 from sb0@Site0
+1385013656841 Auction46> sb0@Site1 wins at price 0.8
+1385013656841 sb0@Site1> I won auction Auction46, file is local so sending RFD message
+1385013656841 Auction46> received rfd message
+1385013657841 Auction47> starting level 0 auction for file File9 for AM@Site1
+1385013657841 sb0@Site1> local file satisfies Auction47, bidding 0.0
+1385013657841 Auction47> adding bid of 0.0 from sb0@Site1
+1385013657841 sb0@Site0> local file satisfies Auction47, bidding 0.8
+1385013657841 Auction47> adding bid of 0.8 from sb0@Site0
+1385013658341 Auction47> sb0@Site1 wins at price 0.8
+1385013658341 sb0@Site1> I won auction Auction47, file is local so sending RFD message
+1385013658341 Auction47> received rfd message
+1385013659341 Auction48> starting level 0 auction for file File9 for AM@Site1
+1385013659341 sb0@Site1> local file satisfies Auction48, bidding 0.0
+1385013659341 Auction48> adding bid of 0.0 from sb0@Site1
+1385013659341 sb0@Site0> local file satisfies Auction48, bidding 0.8
+1385013659341 Auction48> adding bid of 0.8 from sb0@Site0
+1385013659841 Auction48> sb0@Site1 wins at price 0.8
+1385013659841 sb0@Site1> I won auction Auction48, file is local so sending RFD message
+1385013659841 Auction48> received rfd message
+1385013660841 Auction49> starting level 0 auction for file File9 for AM@Site1
+1385013660841 sb0@Site1> local file satisfies Auction49, bidding 0.0
+1385013660841 Auction49> adding bid of 0.0 from sb0@Site1
+1385013660841 sb0@Site0> local file satisfies Auction49, bidding 0.8
+1385013660841 Auction49> adding bid of 0.8 from sb0@Site0
+1385013661341 Auction49> sb0@Site1 wins at price 0.8
+1385013661341 sb0@Site1> I won auction Auction49, file is local so sending RFD message
+1385013661341 Auction49> received rfd message
+1385013662341 Auction50> starting level 0 auction for file File9 for AM@Site1
+1385013662341 sb0@Site1> local file satisfies Auction50, bidding 0.0
+1385013662341 Auction50> adding bid of 0.0 from sb0@Site1
+1385013662341 sb0@Site0> local file satisfies Auction50, bidding 0.8
+1385013662341 Auction50> adding bid of 0.8 from sb0@Site0
+1385013662841 Auction50> sb0@Site1 wins at price 0.8
+1385013662841 sb0@Site1> I won auction Auction50, file is local so sending RFD message
+1385013662841 Auction50> received rfd message
+1385013663841 Auction51> starting level 0 auction for file File7 for AM@Site1
+1385013663841 sb0@Site1> local file satisfies Auction51, bidding 0.0
+1385013663841 Auction51> adding bid of 0.0 from sb0@Site1
+1385013663841 sb0@Site0> local file satisfies Auction51, bidding 0.8
+1385013663841 Auction51> adding bid of 0.8 from sb0@Site0
+1385013664341 Auction51> sb0@Site1 wins at price 0.8
+1385013664341 sb0@Site1> I won auction Auction51, file is local so sending RFD message
+1385013664341 Auction51> received rfd message
+1385013665341 Auction52> starting level 0 auction for file File5 for AM@Site1
+1385013665341 sb0@Site1> local file satisfies Auction52, bidding 0.0
+1385013665341 Auction52> adding bid of 0.0 from sb0@Site1
+1385013665341 sb0@Site0> local file satisfies Auction52, bidding 0.8
+1385013665341 Auction52> adding bid of 0.8 from sb0@Site0
+1385013665841 Auction52> sb0@Site1 wins at price 0.8
+1385013665841 sb0@Site1> I won auction Auction52, file is local so sending RFD message
+1385013665841 Auction52> received rfd message
+1385013666841 Auction53> starting level 0 auction for file File6 for AM@Site1
+1385013666841 sb0@Site1> local file satisfies Auction53, bidding 0.0
+1385013666841 Auction53> adding bid of 0.0 from sb0@Site1
+1385013666841 sb0@Site0> local file satisfies Auction53, bidding 0.8
+1385013666841 Auction53> adding bid of 0.8 from sb0@Site0
+1385013667341 Auction53> sb0@Site1 wins at price 0.8
+1385013667341 sb0@Site1> I won auction Auction53, file is local so sending RFD message
+1385013667341 Auction53> received rfd message
+1385013668341 Auction54> starting level 0 auction for file File8 for AM@Site1
+1385013668341 sb0@Site1> local file satisfies Auction54, bidding 0.0
+1385013668341 Auction54> adding bid of 0.0 from sb0@Site1
+1385013668341 sb0@Site0> local file satisfies Auction54, bidding 0.8
+1385013668341 Auction54> adding bid of 0.8 from sb0@Site0
+1385013668841 Auction54> sb0@Site1 wins at price 0.8
+1385013668841 sb0@Site1> I won auction Auction54, file is local so sending RFD message
+1385013668841 Auction54> received rfd message
+1385013669841 Auction55> starting level 0 auction for file File8 for AM@Site1
+1385013669841 sb0@Site1> local file satisfies Auction55, bidding 0.0
+1385013669841 Auction55> adding bid of 0.0 from sb0@Site1
+1385013669841 sb0@Site0> local file satisfies Auction55, bidding 0.8
+1385013669841 Auction55> adding bid of 0.8 from sb0@Site0
+1385013670341 Auction55> sb0@Site1 wins at price 0.8
+1385013670341 sb0@Site1> I won auction Auction55, file is local so sending RFD message
+1385013670341 Auction55> received rfd message
+1385013671341 Auction56> starting level 0 auction for file File9 for AM@Site1
+1385013671341 sb0@Site1> local file satisfies Auction56, bidding 0.0
+1385013671341 Auction56> adding bid of 0.0 from sb0@Site1
+1385013671341 sb0@Site0> local file satisfies Auction56, bidding 0.8
+1385013671341 Auction56> adding bid of 0.8 from sb0@Site0
+1385013671841 Auction56> sb0@Site1 wins at price 0.8
+1385013671841 sb0@Site1> I won auction Auction56, file is local so sending RFD message
+1385013671841 Auction56> received rfd message
+1385013672841 Auction57> starting level 0 auction for file File9 for AM@Site1
+1385013672841 sb0@Site1> local file satisfies Auction57, bidding 0.0
+1385013672841 Auction57> adding bid of 0.0 from sb0@Site1
+1385013672841 sb0@Site0> local file satisfies Auction57, bidding 0.8
+1385013672841 Auction57> adding bid of 0.8 from sb0@Site0
+1385013673341 Auction57> sb0@Site1 wins at price 0.8
+1385013673341 sb0@Site1> I won auction Auction57, file is local so sending RFD message
+1385013673341 Auction57> received rfd message
+1385013674341 Auction58> starting level 0 auction for file File2 for AM@Site1
+1385013674341 sb0@Site1> local file satisfies Auction58, bidding 0.0
+1385013674341 Auction58> adding bid of 0.0 from sb0@Site1
+1385013674341 sb0@Site0> local file satisfies Auction58, bidding 0.8
+1385013674341 Auction58> adding bid of 0.8 from sb0@Site0
+1385013674841 Auction58> sb0@Site1 wins at price 0.8
+1385013674841 sb0@Site1> I won auction Auction58, file is local so sending RFD message
+1385013674841 Auction58> received rfd message
+1385013675841 Auction59> starting level 0 auction for file File3 for AM@Site1
+1385013675841 sb0@Site1> enough space, so replicate anyway
+1385013675841 sb0@Site1> Starting Auction60 (level 1) for File3 reacting to Auction59
+1385013675841 sb0@Site0> local file satisfies Auction59, bidding 0.8
+1385013675841 Auction60> starting level 1 auction for file File3 for sb0@Site1
+1385013675841 Auction59> adding bid of 0.8 from sb0@Site0
+1385013675991 sb0@Site0> local file satisfies Auction60, bidding 0.8
+1385013675991 Auction60> adding bid of 0.8 from sb0@Site0
+1385013676191 Auction60> sb0@Site0 wins at price 3.4028235E38
+1385013676191 sb0@Site1> hello? why am I not bidding?
+1385013676191 sb0@Site1> Nested auction Auction60 complete, sending bid of 0.0 to auction Auction59
+1385013676191 Auction59> adding bid of 0.0 from sb0@Site1
+1385013676191 sb0@Site0> I won auction Auction60, file is local so sending RFD message
+1385013676191 Auction60> received rfd message
+1385013676191 Auction60> starting to replicate, winning file is {File3 on SE1@Site0}
+1385013676341 Auction59> sb0@Site1 wins at price 0.8
+1385013676341 sb0@Site1> won Auction59, but still replicating, updating pending file
+1385013676991 sb0@Site1> Replica ready, sending RFD to Auction59
+1385013676991 Auction59> received rfd message
+1385013677991 Auction61> starting level 0 auction for file File8 for AM@Site1
+1385013677991 sb0@Site1> local file satisfies Auction61, bidding 0.0
+1385013677991 Auction61> adding bid of 0.0 from sb0@Site1
+1385013677991 sb0@Site0> local file satisfies Auction61, bidding 0.8
+1385013677991 Auction61> adding bid of 0.8 from sb0@Site0
+1385013678491 Auction61> sb0@Site1 wins at price 0.8
+1385013678491 sb0@Site1> I won auction Auction61, file is local so sending RFD message
+1385013678491 Auction61> received rfd message
+1385013679491 Auction62> starting level 0 auction for file File5 for AM@Site1
+1385013679491 sb0@Site1> local file satisfies Auction62, bidding 0.0
+1385013679491 Auction62> adding bid of 0.0 from sb0@Site1
+1385013679491 sb0@Site0> local file satisfies Auction62, bidding 0.8
+1385013679491 Auction62> adding bid of 0.8 from sb0@Site0
+1385013679991 Auction62> sb0@Site1 wins at price 0.8
+1385013679991 sb0@Site1> I won auction Auction62, file is local so sending RFD message
+1385013679991 Auction62> received rfd message
+1385013680991 Auction63> starting level 0 auction for file File6 for AM@Site1
+1385013680991 sb0@Site1> local file satisfies Auction63, bidding 0.0
+1385013680991 Auction63> adding bid of 0.0 from sb0@Site1
+1385013680991 sb0@Site0> local file satisfies Auction63, bidding 0.8
+1385013680991 Auction63> adding bid of 0.8 from sb0@Site0
+1385013681491 Auction63> sb0@Site1 wins at price 0.8
+1385013681491 sb0@Site1> I won auction Auction63, file is local so sending RFD message
+1385013681491 Auction63> received rfd message
+1385013682491 Auction64> starting level 0 auction for file File7 for AM@Site1
+1385013682491 sb0@Site1> local file satisfies Auction64, bidding 0.0
+1385013682491 Auction64> adding bid of 0.0 from sb0@Site1
+1385013682491 sb0@Site0> local file satisfies Auction64, bidding 0.8
+1385013682491 Auction64> adding bid of 0.8 from sb0@Site0
+1385013682991 Auction64> sb0@Site1 wins at price 0.8
+1385013682991 sb0@Site1> I won auction Auction64, file is local so sending RFD message
+1385013682991 Auction64> received rfd message
+1385013683991 Auction65> starting level 0 auction for file File8 for AM@Site1
+1385013683991 sb0@Site1> local file satisfies Auction65, bidding 0.0
+1385013683991 Auction65> adding bid of 0.0 from sb0@Site1
+1385013683991 sb0@Site0> local file satisfies Auction65, bidding 0.8
+1385013683991 Auction65> adding bid of 0.8 from sb0@Site0
+1385013684491 Auction65> sb0@Site1 wins at price 0.8
+1385013684491 sb0@Site1> I won auction Auction65, file is local so sending RFD message
+1385013684491 Auction65> received rfd message
+1385013685491 Auction66> starting level 0 auction for file File9 for AM@Site1
+1385013685491 sb0@Site1> local file satisfies Auction66, bidding 0.0
+1385013685491 Auction66> adding bid of 0.0 from sb0@Site1
+1385013685491 sb0@Site0> local file satisfies Auction66, bidding 0.8
+1385013685491 Auction66> adding bid of 0.8 from sb0@Site0
+1385013685991 Auction66> sb0@Site1 wins at price 0.8
+1385013685991 sb0@Site1> I won auction Auction66, file is local so sending RFD message
+1385013685991 Auction66> received rfd message
+1385013686991 Auction67> starting level 0 auction for file File1 for AM@Site1
+1385013686991 sb0@Site1> enough space, so replicate anyway
+1385013686991 sb0@Site1> Starting Auction68 (level 1) for File1 reacting to Auction67
+1385013686991 Auction67> adding bid of 0.8 from sb0@Site0
+1385013686991 sb0@Site0> local file satisfies Auction67, bidding 0.8
+1385013686991 Auction68> starting level 1 auction for file File1 for sb0@Site1
+1385013687141 sb0@Site0> local file satisfies Auction68, bidding 0.8
+1385013687141 Auction68> adding bid of 0.8 from sb0@Site0
+1385013687341 Auction68> sb0@Site0 wins at price 3.4028235E38
+1385013687341 sb0@Site1> hello? why am I not bidding?
+1385013687341 sb0@Site1> Nested auction Auction68 complete, sending bid of 0.0 to auction Auction67
+1385013687341 Auction67> adding bid of 0.0 from sb0@Site1
+1385013687341 sb0@Site0> I won auction Auction68, file is local so sending RFD message
+1385013687341 Auction68> received rfd message
+1385013687341 Auction68> starting to replicate, winning file is {File1 on SE1@Site0}
+1385013687491 Auction67> sb0@Site1 wins at price 0.8
+1385013687491 sb0@Site1> won Auction67, but still replicating, updating pending file
+1385013688141 sb0@Site1> Replica ready, sending RFD to Auction67
+1385013688141 Auction67> received rfd message
+1385013689141 Auction69> starting level 0 auction for file File9 for AM@Site1
+1385013689141 sb0@Site1> local file satisfies Auction69, bidding 0.0
+1385013689141 Auction69> adding bid of 0.0 from sb0@Site1
+1385013689141 sb0@Site0> local file satisfies Auction69, bidding 0.8
+1385013689141 Auction69> adding bid of 0.8 from sb0@Site0
+1385013689641 Auction69> sb0@Site1 wins at price 0.8
+1385013689641 sb0@Site1> I won auction Auction69, file is local so sending RFD message
+1385013689641 Auction69> received rfd message
+1385013690641 Auction70> starting level 0 auction for file File3 for AM@Site1
+1385013690641 sb0@Site1> local file satisfies Auction70, bidding 0.0
+1385013690641 Auction70> adding bid of 0.0 from sb0@Site1
+1385013690641 sb0@Site0> local file satisfies Auction70, bidding 0.8
+1385013690641 Auction70> adding bid of 0.8 from sb0@Site0
+1385013691141 Auction70> sb0@Site1 wins at price 0.8
+1385013691141 sb0@Site1> I won auction Auction70, file is local so sending RFD message
+1385013691141 Auction70> received rfd message
+1385013692141 Auction71> starting level 0 auction for file File9 for AM@Site1
+1385013692141 sb0@Site1> local file satisfies Auction71, bidding 0.0
+1385013692141 Auction71> adding bid of 0.0 from sb0@Site1
+1385013692141 sb0@Site0> local file satisfies Auction71, bidding 0.8
+1385013692141 Auction71> adding bid of 0.8 from sb0@Site0
+1385013692641 Auction71> sb0@Site1 wins at price 0.8
+1385013692641 sb0@Site1> I won auction Auction71, file is local so sending RFD message
+1385013692641 Auction71> received rfd message
+1385013693641 Auction72> starting level 0 auction for file File5 for AM@Site1
+1385013693641 sb0@Site1> local file satisfies Auction72, bidding 0.0
+1385013693641 Auction72> adding bid of 0.0 from sb0@Site1
+1385013693641 sb0@Site0> local file satisfies Auction72, bidding 0.8
+1385013693641 Auction72> adding bid of 0.8 from sb0@Site0
+1385013694141 Auction72> sb0@Site1 wins at price 0.8
+1385013694141 sb0@Site1> I won auction Auction72, file is local so sending RFD message
+1385013694141 Auction72> received rfd message
+1385013695141 Auction73> starting level 0 auction for file File6 for AM@Site1
+1385013695141 sb0@Site1> local file satisfies Auction73, bidding 0.0
+1385013695141 Auction73> adding bid of 0.0 from sb0@Site1
+1385013695141 sb0@Site0> local file satisfies Auction73, bidding 0.8
+1385013695141 Auction73> adding bid of 0.8 from sb0@Site0
+1385013695641 Auction73> sb0@Site1 wins at price 0.8
+1385013695641 sb0@Site1> I won auction Auction73, file is local so sending RFD message
+1385013695641 Auction73> received rfd message
+1385013696641 Auction74> starting level 0 auction for file File7 for AM@Site1
+1385013696641 sb0@Site1> local file satisfies Auction74, bidding 0.0
+1385013696641 Auction74> adding bid of 0.0 from sb0@Site1
+1385013696641 sb0@Site0> local file satisfies Auction74, bidding 0.8
+1385013696641 Auction74> adding bid of 0.8 from sb0@Site0
+1385013697141 Auction74> sb0@Site1 wins at price 0.8
+1385013697141 sb0@Site1> I won auction Auction74, file is local so sending RFD message
+1385013697141 Auction74> received rfd message
+1385013698141 Auction75> starting level 0 auction for file File8 for AM@Site1
+1385013698141 sb0@Site1> local file satisfies Auction75, bidding 0.0
+1385013698141 Auction75> adding bid of 0.0 from sb0@Site1
+1385013698141 sb0@Site0> local file satisfies Auction75, bidding 0.8
+1385013698141 Auction75> adding bid of 0.8 from sb0@Site0
+1385013698641 Auction75> sb0@Site1 wins at price 0.8
+1385013698641 sb0@Site1> I won auction Auction75, file is local so sending RFD message
+1385013698641 Auction75> received rfd message
+1385013699641 Auction76> starting level 0 auction for file File9 for AM@Site1
+1385013699641 sb0@Site1> local file satisfies Auction76, bidding 0.0
+1385013699641 Auction76> adding bid of 0.0 from sb0@Site1
+1385013699641 sb0@Site0> local file satisfies Auction76, bidding 0.8
+1385013699641 Auction76> adding bid of 0.8 from sb0@Site0
+1385013700141 Auction76> sb0@Site1 wins at price 0.8
+1385013700141 sb0@Site1> I won auction Auction76, file is local so sending RFD message
+1385013700141 Auction76> received rfd message
+1385013701141 Auction77> starting level 0 auction for file File5 for AM@Site1
+1385013701141 sb0@Site1> local file satisfies Auction77, bidding 0.0
+1385013701141 Auction77> adding bid of 0.0 from sb0@Site1
+1385013701141 sb0@Site0> local file satisfies Auction77, bidding 0.8
+1385013701141 Auction77> adding bid of 0.8 from sb0@Site0
+1385013701641 Auction77> sb0@Site1 wins at price 0.8
+1385013701641 sb0@Site1> I won auction Auction77, file is local so sending RFD message
+1385013701641 Auction77> received rfd message
+1385013702641 Auction78> starting level 0 auction for file File2 for AM@Site1
+1385013702641 sb0@Site1> local file satisfies Auction78, bidding 0.0
+1385013702641 Auction78> adding bid of 0.0 from sb0@Site1
+1385013702641 sb0@Site0> local file satisfies Auction78, bidding 0.8
+1385013702641 Auction78> adding bid of 0.8 from sb0@Site0
+1385013703141 Auction78> sb0@Site1 wins at price 0.8
+1385013703141 sb0@Site1> I won auction Auction78, file is local so sending RFD message
+1385013703141 Auction78> received rfd message
+1385013704141 Auction79> starting level 0 auction for file File3 for AM@Site1
+1385013704141 sb0@Site1> local file satisfies Auction79, bidding 0.0
+1385013704141 Auction79> adding bid of 0.0 from sb0@Site1
+1385013704141 sb0@Site0> local file satisfies Auction79, bidding 0.8
+1385013704141 Auction79> adding bid of 0.8 from sb0@Site0
+1385013704641 Auction79> sb0@Site1 wins at price 0.8
+1385013704641 sb0@Site1> I won auction Auction79, file is local so sending RFD message
+1385013704641 Auction79> received rfd message
+1385013705641 Auction80> starting level 0 auction for file File9 for AM@Site1
+1385013705641 sb0@Site1> local file satisfies Auction80, bidding 0.0
+1385013705641 Auction80> adding bid of 0.0 from sb0@Site1
+1385013705641 sb0@Site0> local file satisfies Auction80, bidding 0.8
+1385013705641 Auction80> adding bid of 0.8 from sb0@Site0
+1385013706141 Auction80> sb0@Site1 wins at price 0.8
+1385013706141 sb0@Site1> I won auction Auction80, file is local so sending RFD message
+1385013706141 Auction80> received rfd message
+1385013707141 Auction81> starting level 0 auction for file File2 for AM@Site1
+1385013707141 sb0@Site1> local file satisfies Auction81, bidding 0.0
+1385013707141 Auction81> adding bid of 0.0 from sb0@Site1
+1385013707141 sb0@Site0> local file satisfies Auction81, bidding 0.8
+1385013707141 Auction81> adding bid of 0.8 from sb0@Site0
+1385013707641 Auction81> sb0@Site1 wins at price 0.8
+1385013707641 sb0@Site1> I won auction Auction81, file is local so sending RFD message
+1385013707641 Auction81> received rfd message
+1385013708641 Auction82> starting level 0 auction for file File6 for AM@Site1
+1385013708641 sb0@Site1> local file satisfies Auction82, bidding 0.0
+1385013708641 Auction82> adding bid of 0.0 from sb0@Site1
+1385013708641 sb0@Site0> local file satisfies Auction82, bidding 0.8
+1385013708641 Auction82> adding bid of 0.8 from sb0@Site0
+1385013709141 Auction82> sb0@Site1 wins at price 0.8
+1385013709141 sb0@Site1> I won auction Auction82, file is local so sending RFD message
+1385013709141 Auction82> received rfd message
+1385013710141 Auction83> starting level 0 auction for file File7 for AM@Site1
+1385013710141 sb0@Site1> local file satisfies Auction83, bidding 0.0
+1385013710141 Auction83> adding bid of 0.0 from sb0@Site1
+1385013710141 sb0@Site0> local file satisfies Auction83, bidding 0.8
+1385013710141 Auction83> adding bid of 0.8 from sb0@Site0
+1385013710641 Auction83> sb0@Site1 wins at price 0.8
+1385013710641 sb0@Site1> I won auction Auction83, file is local so sending RFD message
+1385013710641 Auction83> received rfd message
+1385013711641 Auction84> starting level 0 auction for file File8 for AM@Site1
+1385013711641 sb0@Site1> local file satisfies Auction84, bidding 0.0
+1385013711641 Auction84> adding bid of 0.0 from sb0@Site1
+1385013711641 sb0@Site0> local file satisfies Auction84, bidding 0.8
+1385013711641 Auction84> adding bid of 0.8 from sb0@Site0
+1385013712141 Auction84> sb0@Site1 wins at price 0.8
+1385013712141 sb0@Site1> I won auction Auction84, file is local so sending RFD message
+1385013712141 Auction84> received rfd message
+1385013713141 Auction85> starting level 0 auction for file File9 for AM@Site1
+1385013713141 sb0@Site1> local file satisfies Auction85, bidding 0.0
+1385013713141 Auction85> adding bid of 0.0 from sb0@Site1
+1385013713141 sb0@Site0> local file satisfies Auction85, bidding 0.8
+1385013713141 Auction85> adding bid of 0.8 from sb0@Site0
+1385013713641 Auction85> sb0@Site1 wins at price 0.8
+1385013713641 sb0@Site1> I won auction Auction85, file is local so sending RFD message
+1385013713641 Auction85> received rfd message
+1385013714641 Auction86> starting level 0 auction for file File1 for AM@Site1
+1385013714641 sb0@Site1> local file satisfies Auction86, bidding 0.0
+1385013714641 Auction86> adding bid of 0.0 from sb0@Site1
+1385013714641 sb0@Site0> local file satisfies Auction86, bidding 0.8
+1385013714641 Auction86> adding bid of 0.8 from sb0@Site0
+1385013715141 Auction86> sb0@Site1 wins at price 0.8
+1385013715141 sb0@Site1> I won auction Auction86, file is local so sending RFD message
+1385013715141 Auction86> received rfd message
+1385013716141 Auction87> starting level 0 auction for file File9 for AM@Site1
+1385013716141 sb0@Site1> local file satisfies Auction87, bidding 0.0
+1385013716141 Auction87> adding bid of 0.0 from sb0@Site1
+1385013716141 sb0@Site0> local file satisfies Auction87, bidding 0.8
+1385013716141 Auction87> adding bid of 0.8 from sb0@Site0
+1385013716641 Auction87> sb0@Site1 wins at price 0.8
+1385013716641 sb0@Site1> I won auction Auction87, file is local so sending RFD message
+1385013716641 Auction87> received rfd message
+1385013717641 Auction88> starting level 0 auction for file File3 for AM@Site1
+1385013717641 sb0@Site1> local file satisfies Auction88, bidding 0.0
+1385013717641 Auction88> adding bid of 0.0 from sb0@Site1
+1385013717641 sb0@Site0> local file satisfies Auction88, bidding 0.8
+1385013717641 Auction88> adding bid of 0.8 from sb0@Site0
+1385013718141 Auction88> sb0@Site1 wins at price 0.8
+1385013718141 sb0@Site1> I won auction Auction88, file is local so sending RFD message
+1385013718141 Auction88> received rfd message
+1385013719141 Auction89> starting level 0 auction for file File4 for AM@Site1
+1385013719141 sb0@Site1> local file satisfies Auction89, bidding 0.0
+1385013719141 Auction89> adding bid of 0.0 from sb0@Site1
+1385013719141 sb0@Site0> local file satisfies Auction89, bidding 0.8
+1385013719141 Auction89> adding bid of 0.8 from sb0@Site0
+1385013719641 Auction89> sb0@Site1 wins at price 0.8
+1385013719641 sb0@Site1> I won auction Auction89, file is local so sending RFD message
+1385013719641 Auction89> received rfd message
+1385013720641 Auction90> starting level 0 auction for file File9 for AM@Site1
+1385013720641 sb0@Site1> local file satisfies Auction90, bidding 0.0
+1385013720641 Auction90> adding bid of 0.0 from sb0@Site1
+1385013720641 sb0@Site0> local file satisfies Auction90, bidding 0.8
+1385013720641 Auction90> adding bid of 0.8 from sb0@Site0
+1385013721141 Auction90> sb0@Site1 wins at price 0.8
+1385013721141 sb0@Site1> I won auction Auction90, file is local so sending RFD message
+1385013721141 Auction90> received rfd message
+1385013722141 Auction91> starting level 0 auction for file File6 for AM@Site1
+1385013722141 sb0@Site1> local file satisfies Auction91, bidding 0.0
+1385013722141 Auction91> adding bid of 0.0 from sb0@Site1
+1385013722141 sb0@Site0> local file satisfies Auction91, bidding 0.8
+1385013722141 Auction91> adding bid of 0.8 from sb0@Site0
+1385013722641 Auction91> sb0@Site1 wins at price 0.8
+1385013722641 sb0@Site1> I won auction Auction91, file is local so sending RFD message
+1385013722641 Auction91> received rfd message
+1385013723641 Auction92> starting level 0 auction for file File7 for AM@Site1
+1385013723641 sb0@Site1> local file satisfies Auction92, bidding 0.0
+1385013723641 Auction92> adding bid of 0.0 from sb0@Site1
+1385013723641 sb0@Site0> local file satisfies Auction92, bidding 0.8
+1385013723641 Auction92> adding bid of 0.8 from sb0@Site0
+1385013724141 Auction92> sb0@Site1 wins at price 0.8
+1385013724141 sb0@Site1> I won auction Auction92, file is local so sending RFD message
+1385013724141 Auction92> received rfd message
+1385013725141 Auction93> starting level 0 auction for file File8 for AM@Site1
+1385013725141 sb0@Site1> local file satisfies Auction93, bidding 0.0
+1385013725141 Auction93> adding bid of 0.0 from sb0@Site1
+1385013725141 sb0@Site0> local file satisfies Auction93, bidding 0.8
+1385013725141 Auction93> adding bid of 0.8 from sb0@Site0
+1385013725641 Auction93> sb0@Site1 wins at price 0.8
+1385013725641 sb0@Site1> I won auction Auction93, file is local so sending RFD message
+1385013725641 Auction93> received rfd message
+1385013726641 Auction94> starting level 0 auction for file File9 for AM@Site1
+1385013726641 sb0@Site1> local file satisfies Auction94, bidding 0.0
+1385013726641 Auction94> adding bid of 0.0 from sb0@Site1
+1385013726641 sb0@Site0> local file satisfies Auction94, bidding 0.8
+1385013726641 Auction94> adding bid of 0.8 from sb0@Site0
+1385013727141 Auction94> sb0@Site1 wins at price 0.8
+1385013727141 sb0@Site1> I won auction Auction94, file is local so sending RFD message
+1385013727141 Auction94> received rfd message
+1385013728141 Auction95> starting level 0 auction for file File9 for AM@Site1
+1385013728141 sb0@Site1> local file satisfies Auction95, bidding 0.0
+1385013728141 Auction95> adding bid of 0.0 from sb0@Site1
+1385013728141 sb0@Site0> local file satisfies Auction95, bidding 0.8
+1385013728141 Auction95> adding bid of 0.8 from sb0@Site0
+1385013728641 Auction95> sb0@Site1 wins at price 0.8
+1385013728641 sb0@Site1> I won auction Auction95, file is local so sending RFD message
+1385013728641 Auction95> received rfd message
+1385013729641 Auction96> starting level 0 auction for file File9 for AM@Site1
+1385013729641 sb0@Site1> local file satisfies Auction96, bidding 0.0
+1385013729641 Auction96> adding bid of 0.0 from sb0@Site1
+1385013729641 sb0@Site0> local file satisfies Auction96, bidding 0.8
+1385013729641 Auction96> adding bid of 0.8 from sb0@Site0
+1385013730141 Auction96> sb0@Site1 wins at price 0.8
+1385013730141 sb0@Site1> I won auction Auction96, file is local so sending RFD message
+1385013730141 Auction96> received rfd message
+1385013731141 Auction97> starting level 0 auction for file File3 for AM@Site1
+1385013731141 sb0@Site1> local file satisfies Auction97, bidding 0.0
+1385013731141 Auction97> adding bid of 0.0 from sb0@Site1
+1385013731141 sb0@Site0> local file satisfies Auction97, bidding 0.8
+1385013731141 Auction97> adding bid of 0.8 from sb0@Site0
+1385013731641 Auction97> sb0@Site1 wins at price 0.8
+1385013731641 sb0@Site1> I won auction Auction97, file is local so sending RFD message
+1385013731641 Auction97> received rfd message
+1385013732641 Auction98> starting level 0 auction for file File4 for AM@Site1
+1385013732641 sb0@Site1> local file satisfies Auction98, bidding 0.0
+1385013732641 Auction98> adding bid of 0.0 from sb0@Site1
+1385013732641 sb0@Site0> local file satisfies Auction98, bidding 0.8
+1385013732641 Auction98> adding bid of 0.8 from sb0@Site0
+1385013733141 Auction98> sb0@Site1 wins at price 0.8
+1385013733141 sb0@Site1> I won auction Auction98, file is local so sending RFD message
+1385013733141 Auction98> received rfd message
+1385013734141 Auction99> starting level 0 auction for file File9 for AM@Site1
+1385013734141 sb0@Site1> local file satisfies Auction99, bidding 0.0
+1385013734141 Auction99> adding bid of 0.0 from sb0@Site1
+1385013734141 sb0@Site0> local file satisfies Auction99, bidding 0.8
+1385013734141 Auction99> adding bid of 0.8 from sb0@Site0
+1385013734641 Auction99> sb0@Site1 wins at price 0.8
+1385013734641 sb0@Site1> I won auction Auction99, file is local so sending RFD message
+1385013734641 Auction99> received rfd message
+1385013735641 Auction100> starting level 0 auction for file File6 for AM@Site1
+1385013735641 sb0@Site1> local file satisfies Auction100, bidding 0.0
+1385013735641 Auction100> adding bid of 0.0 from sb0@Site1
+1385013735641 sb0@Site0> local file satisfies Auction100, bidding 0.8
+1385013735641 Auction100> adding bid of 0.8 from sb0@Site0
+1385013736141 Auction100> sb0@Site1 wins at price 0.8
+1385013736141 sb0@Site1> I won auction Auction100, file is local so sending RFD message
+1385013736141 Auction100> received rfd message
+1385013737141 Auction101> starting level 0 auction for file File7 for AM@Site1
+1385013737141 sb0@Site1> local file satisfies Auction101, bidding 0.0
+1385013737141 Auction101> adding bid of 0.0 from sb0@Site1
+1385013737141 sb0@Site0> local file satisfies Auction101, bidding 0.8
+1385013737141 Auction101> adding bid of 0.8 from sb0@Site0
+1385013737641 Auction101> sb0@Site1 wins at price 0.8
+1385013737641 sb0@Site1> I won auction Auction101, file is local so sending RFD message
+1385013737641 Auction101> received rfd message
+1385013738641 Auction102> starting level 0 auction for file File8 for AM@Site1
+1385013738641 sb0@Site1> local file satisfies Auction102, bidding 0.0
+1385013738641 Auction102> adding bid of 0.0 from sb0@Site1
+1385013738641 sb0@Site0> local file satisfies Auction102, bidding 0.8
+1385013738641 Auction102> adding bid of 0.8 from sb0@Site0
+1385013739141 Auction102> sb0@Site1 wins at price 0.8
+1385013739141 sb0@Site1> I won auction Auction102, file is local so sending RFD message
+1385013739141 Auction102> received rfd message
+1385013740141 Auction103> starting level 0 auction for file File9 for AM@Site1
+1385013740141 sb0@Site1> local file satisfies Auction103, bidding 0.0
+1385013740141 Auction103> adding bid of 0.0 from sb0@Site1
+1385013740141 sb0@Site0> local file satisfies Auction103, bidding 0.8
+1385013740141 Auction103> adding bid of 0.8 from sb0@Site0
+1385013740641 Auction103> sb0@Site1 wins at price 0.8
+1385013740641 sb0@Site1> I won auction Auction103, file is local so sending RFD message
+1385013740641 Auction103> received rfd message
+1385013741641 Auction104> starting level 0 auction for file File10 for AM@Site1
+1385013741641 sb0@Site0> local file satisfies Auction104, bidding 0.8
+1385013741641 Auction104> adding bid of 0.8 from sb0@Site0
+1385013741641 sb0@Site2> local file satisfies Auction104, bidding 0.8888889
+1385013741641 Auction104> adding bid of 0.8888889 from sb0@Site2
+1385013741641 sb0@Site1> Starting Auction105 (level 1) for File10 reacting to Auction104
+1385013741641 Auction105> starting level 1 auction for file File10 for sb0@Site1
+1385013741791 sb0@Site0> local file satisfies Auction105, bidding 0.8
+1385013741791 Auction105> adding bid of 0.8 from sb0@Site0
+1385013741791 sb0@Site2> local file satisfies Auction105, bidding 0.8888889
+1385013741791 Auction105> adding bid of 0.8888889 from sb0@Site2
+1385013741991 Auction105> sb0@Site0 wins at price 0.8888889
+1385013741991 sb0@Site1> hello? why am I not bidding?
+1385013741991 sb0@Site1> Nested auction Auction105 complete, sending bid of 0.0 to auction Auction104
+1385013741991 Auction104> adding bid of 0.0 from sb0@Site1
+1385013741991 sb0@Site0> I won auction Auction105, file is local so sending RFD message
+1385013741991 Auction105> received rfd message
+1385013741991 Auction105> starting to replicate, winning file is {File10 on SE1@Site0}
+1385013742141 Auction104> sb0@Site1 wins at price 0.8
+1385013742141 sb0@Site1> won Auction104, but still replicating, updating pending file
+1385013742791 sb0@Site1> Replica ready, sending RFD to Auction104
+1385013742791 Auction104> received rfd message
+1385013743791 Auction106> starting level 0 auction for file File10 for AM@Site1
+1385013743791 sb0@Site1> local file satisfies Auction106, bidding 0.0
+1385013743791 Auction106> adding bid of 0.0 from sb0@Site1
+1385013743791 sb0@Site0> local file satisfies Auction106, bidding 0.8
+1385013743791 Auction106> adding bid of 0.8 from sb0@Site0
+1385013743791 sb0@Site2> local file satisfies Auction106, bidding 0.8888889
+1385013743791 Auction106> adding bid of 0.8888889 from sb0@Site2
+1385013744291 Auction106> sb0@Site1 wins at price 0.8
+1385013744291 sb0@Site1> I won auction Auction106, file is local so sending RFD message
+1385013744291 Auction106> received rfd message
+1385013745291 Auction107> starting level 0 auction for file File10 for AM@Site1
+1385013745291 sb0@Site1> local file satisfies Auction107, bidding 0.0
+1385013745291 Auction107> adding bid of 0.0 from sb0@Site1
+1385013745291 sb0@Site0> local file satisfies Auction107, bidding 0.8
+1385013745291 sb0@Site2> local file satisfies Auction107, bidding 0.8888889
+1385013745291 Auction107> adding bid of 0.8 from sb0@Site0
+1385013745291 Auction107> adding bid of 0.8888889 from sb0@Site2
+1385013745791 Auction107> sb0@Site1 wins at price 0.8
+1385013745791 sb0@Site1> I won auction Auction107, file is local so sending RFD message
+1385013745791 Auction107> received rfd message
