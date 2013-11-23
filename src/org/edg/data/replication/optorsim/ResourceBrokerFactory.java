@@ -50,6 +50,9 @@ public class ResourceBrokerFactory {
 			case 5:
 				System.out.println( "ResourceBrokerFactory> creating a BandwidthResourceBroker");
 				return new BandwidthResourceBroker();
+			case 6:
+				System.out.println( "ResourceBrokerFactory> creating a CSSResourceBroker");
+				return new CSSResourceBroker();
 		}
 		
 		System.out.println( "ResourceBrokerFactory> unknown ResourceBroker type: "+scheduler);

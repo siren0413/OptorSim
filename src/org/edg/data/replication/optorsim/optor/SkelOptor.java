@@ -183,7 +183,7 @@ public class SkelOptor implements Optimisable {
 		int i, j;
 		GridContainer gridContainer = GridContainer.getInstance();
 
-		DataFile[] files = getBestFileForBandwidth(lfns, ce.getSite(), fileFraction);
+		DataFile[] files = getBestFileSite(lfns, ce.getSite(), fileFraction);
 		for (i = 0; i < files.length; i++) {
 			GridSite remoteSite = files[i].se().getGridSite();
 
@@ -209,7 +209,7 @@ public class SkelOptor implements Optimisable {
 		System.out.println("cancelFilePrefetch");
 	}
 	
-	public DataFile[] getBestFileForBandwidth(String[] lfns, GridSite ceSite, float[] fileFraction) {
+	public DataFile[] getBestFileSite(String[] lfns, GridSite ceSite, float[] fileFraction) {
 		DataFile files[] = new DataFile[lfns.length];
 		DataFile replicas[];
 		int i, j;

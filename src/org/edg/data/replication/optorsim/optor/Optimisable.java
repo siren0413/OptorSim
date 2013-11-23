@@ -59,7 +59,7 @@ public interface Optimisable {
     
     
     public double getBandwidthBenchmark(String[] lfn, ComputingElement ce, float[] fileFraction);
-    
+    public DataFile[] getBestFileSite(String[] lfns, GridSite ceSite, float[] fileFraction);
     
 
 }
